@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fdf2e9;
+  height: 9.6rem;
+  padding: 9.6rem 22.8rem;
+}
+
+.logo {
+  height: 6.2rem;
+  cursor: pointer;
+}
+
+.main-nav {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.registration:link,
+.main-nav-link.registration:visited {
+  background-color: #e67e22;
+  color: #fff;
+  border-radius: 0.7rem;
+  padding: 1.6rem 2.4rem;
+  transition: background-color 0.3s;
+}
+
+.main-nav-link.registration:hover,
+.main-nav-link.registration:active {
+  background-color: #cf711f;
+}
