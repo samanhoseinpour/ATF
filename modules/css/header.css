@@ -5,6 +5,8 @@
   background-color: #fdf2e9;
   height: 9.6rem;
   padding: 6.4rem 22.8rem;
+  /* position: sticky;
+  top: 0; */
 }
 
 .logo {
@@ -14,7 +16,7 @@
 
 .main-nav {
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .main-nav-list {

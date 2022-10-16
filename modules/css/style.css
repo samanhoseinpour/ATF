@@ -1,6 +1,8 @@
 @import url(./hero-section.css);
 @import url(./header.css);
 @import url(./how-it-works.css);
+@import url(./featured-in.css);
+@import url(./meals.css);
 
 /* 
 --- 01 TYPROGRAPHY SYSTEM
@@ -33,12 +35,14 @@ Primary: #e67e22
 - Accents:
 - Greys: 
 #555
+#888
 #333
 
 --- 03 SHADOWS 
 
 --- 04 BORDER-RADIUS
 Default: 0.7rem
+Medium: 1.1rem
 
 --- 05 WHITESPACE
 
@@ -59,9 +63,32 @@ html {
 
 body {
   font-family: 'Rubik', sans-serif;
-  line-height: 1;
   font-weight: 400;
+  line-height: 1;
   color: #555;
+}
+
+body::-webkit-scrollbar {
+  background-color: #fff;
+  width: 16px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 4px solid #fff;
+}
+
+body::-webkit-scrollbar-button {
+  display: none;
+}
+
+strong {
+  font-weight: 600;
 }
 
 .container {
@@ -88,12 +115,32 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--cols-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid--center-v {
   align-items: center;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .margin-right-sm {
   margin-right: 4.8rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
 }
 
 .btn:link,
@@ -104,7 +151,7 @@ body {
   border-radius: 0.7rem;
   text-decoration: none;
   padding: 1.6rem 3.2rem;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -128,6 +175,20 @@ body {
 .btn--outline:active {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.link:link,
+.link:visited {
+  color: #e67e22;
+  border-bottom: 0.1rem solid currentColor;
+  padding-bottom: 0.2rem;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid #fff;
 }
 
 .heading-primary,
