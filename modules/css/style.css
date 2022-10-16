@@ -3,6 +3,7 @@
 @import url(./how-it-works.css);
 @import url(./featured-in.css);
 @import url(./meals.css);
+@import url(./testimonials.css);
 
 /* 
 --- 01 TYPROGRAPHY SYSTEM
@@ -35,6 +36,7 @@ Primary: #e67e22
 - Accents:
 - Greys: 
 #555
+#6f6f6f (Lightest gray allowed on #fdf2e9)
 #888
 #333
 
@@ -78,7 +80,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #babac0;
+  background-color: #000;
   border-radius: 16px;
   border: 4px solid #fff;
 }
