@@ -5,6 +5,7 @@
 @import url(./meals.css);
 @import url(./testimonials.css);
 @import url(./pricing.css);
+@import url(./feature.css);
 
 /* 
 --- 01 TYPROGRAPHY SYSTEM
@@ -104,6 +105,10 @@ strong {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .grid--cols-2 {
