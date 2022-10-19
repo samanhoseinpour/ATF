@@ -6,6 +6,7 @@
 @import url(./testimonials.css);
 @import url(./pricing.css);
 @import url(./feature.css);
+@import url(./cta.css);
 
 /* 
 --- 01 TYPROGRAPHY SYSTEM
@@ -33,8 +34,8 @@ Paragraph-Default: 1.6
 
 Primary: #e67e22
 
-- Tints: #fdf2e9, #fae5d3
-- Shades: #cf711f
+- Tints: #fdf2e9, #fae5d3, #eb984e
+- Shades: #cf711f, #45260a
 - Accents:
 - Greys: 
 #555
@@ -43,9 +44,14 @@ Primary: #e67e22
 #333
 
 --- 03 SHADOWS 
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075)
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.15)
+0 3.2rem 6.4rem rgba(0, 0, 0, 0.06)
+
 
 --- 04 BORDER-RADIUS
 Default: 0.7rem
+Semi-Medium: 0.9rem
 Medium: 1.1rem
 
 --- 05 WHITESPACE
@@ -59,6 +65,10 @@ Medium: 1.1rem
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
 }
 
 html {
@@ -151,6 +161,7 @@ a {
   margin-bottom: 4.8rem !important;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -160,6 +171,21 @@ a {
   text-decoration: none;
   padding: 1.6rem 3.2rem;
   transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: flex-end;
+  padding: 1.2rem 1.8rem;
+}
+
+.btn--form:hover,
+.btn--form:active {
+  background-color: #fff;
+  color: #555;
 }
 
 .btn--full:link,
