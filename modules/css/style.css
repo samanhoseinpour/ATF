@@ -7,6 +7,7 @@
 @import url(./pricing.css);
 @import url(./feature.css);
 @import url(./cta.css);
+@import url(./footer.css);
 
 /* 
 --- 01 TYPROGRAPHY SYSTEM
@@ -38,10 +39,11 @@ Primary: #e67e22
 - Shades: #cf711f, #45260a
 - Accents:
 - Greys: 
-#555
-#6f6f6f (Lightest gray allowed on #fdf2e9)
-#888
 #333
+#555
+#888
+#6f6f6f (Lightest gray allowed on #fdf2e9)
+#767676(Lightest gray allowed on #fff)
 
 --- 03 SHADOWS 
 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075)
@@ -111,6 +113,9 @@ strong {
   padding: 4.8rem 3.2rem;
 }
 
+.display--block {
+  display: block;
+}
 .grid {
   display: grid;
   column-gap: 6.4rem;
@@ -119,6 +124,11 @@ strong {
 
 .grid:not(:last-child) {
   margin-bottom: 9.6rem;
+}
+
+.grid--cols-footer {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
 }
 
 .grid--cols-2 {
