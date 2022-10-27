@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="ATF is an AI-powered food subscription 
+      that will make you eat healthy again, 365 days per year.
+      It's tailored to your personal tastes and nutritional needs."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" href="./modules/img/ATF-logo.jpg" />
@@ -15,7 +21,7 @@
     <link rel="stylesheet" href="./modules/css/style.css" />
     <link rel="stylesheet" href="./modules/css/queries.css" />
 
-    <title>ATF</title>
+    <title>ATF &mdash; Never cook again</title>
   </head>
   <body>
     <header class="header">
@@ -24,12 +30,14 @@
       /></a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">How it works</a></li>
-          <li><a class="main-nav-link" href="#">Meals</a></li>
-          <li><a class="main-nav-link" href="#">Testimonials</a></li>
-          <li><a class="main-nav-link" href="#">Pricing</a></li>
+          <li><a class="main-nav-link" href="#how">How it works</a></li>
+          <li><a class="main-nav-link" href="#meals">Meals</a></li>
           <li>
-            <a class="main-nav-link registration" href="#">Try for free</a>
+            <a class="main-nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+          <li>
+            <a class="main-nav-link registration" href="#cta">Try for free</a>
           </li>
         </ul>
       </nav>
@@ -52,10 +60,10 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs. We have delivered 250,000+ meals last year!
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#cta" class="btn btn--full margin-right-sm"
               >Start eating well</a
             >
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img
@@ -120,7 +128,7 @@
         </div>
       </section>
 
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">how it works</span>
           <h2 class="heading-secondary">
@@ -185,7 +193,7 @@
         </div>
       </section>
 
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container text-center">
           <span class="subheading">Meals</span>
           <h2 class="heading-secondary">ATF AI chooses from 5,000+ recipes</h2>
@@ -303,7 +311,7 @@
         </div>
       </section>
 
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="testimonials">
         <div class="testimonials-container">
           <span class="subheading">Testimonials</span>
           <h2 class="heading-secondary">Once your try it, you can't go back</h2>
@@ -450,7 +458,7 @@
         </div>
       </section>
 
-      <section class="section-pricing">
+      <section class="section-pricing" id="pricing">
         <div class="container">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">
@@ -559,7 +567,7 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -639,7 +647,8 @@
             </li>
           </ul>
           <p class="copyright">
-            Copyright &copy; 2027 by ATF, Inc. All rights reserved.
+            Copyright &copy; <span class="year"></span>
+            by ATF, Inc. All rights reserved.
           </p>
         </div>
 
@@ -697,6 +706,11 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script src="./assets/js/script.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script defer src="./modules/js/script.js"></script>
   </body>
 </html>
